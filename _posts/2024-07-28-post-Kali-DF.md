@@ -1,10 +1,10 @@
 ---
 title: "Performing digital forensics on Kali"
-date: 2023-03-19T15:34:30-04:00
+date: 2024-07-28T11:07:30-04:00
 categories:
   - Tutorial
 tags:
-  - Homelab
+
   - Forensics
   - Kali
 ---
@@ -32,7 +32,7 @@ The official documentation is [here](http://sleuthkit.org/autopsy/help/) with so
   * From here I can look at all the users on the host and poke around their desktop and documents
 * Another option can be under the "File name search" you can enter regex for high value files 
   * Here is some example Regex for some files that may be of interest 
-  * ```\.(docx?|pdf|xlsx?|pptx?|txt|rtf|zip|rar|7z|gz|tar|db|sql|mdb|accdb|jpe?g|png|psd|ai|svg|py|js|java|cpp|c|rb|html?|css|exe|bat|sh|pem|crt|key|p12|pfx|csv|pst|eml|msg)$```
+  * ```\.(docx?|pdf|xlsx?|pptx?|txt|rtf|zip|rar|7z|gz|tar|db|sql|mdb|accdb|jpe?g|png|psd|ai||py||bat|sh|pem|crt|key|p12|csv|pst|eml|msg)$```
     * The office documents are the most interesting to look at 
 
 #### How to get Drives for Digital forensics

@@ -1,6 +1,6 @@
 ---
 title: "Setting up digital forensics on Kali hosted on Proxmox"
-date: 2023-03-15T15:34:30-04:00
+date: 2024-07-28T11:07:30-04:00
 categories:
   - Setup
 tags:
@@ -12,10 +12,6 @@ tags:
 ---
 **Notice:** Do not do this a drive that will need chain of custody! This is very fast and loose and there are several parts where systems could modify the drive!
 {: .notice--danger}
-
-### Why?
-
-####  I was waiting on harddrives to come in for my new Proxmox host and was able to get a harddrive from an estate sale and found another one. To get my reps in for Digital forensics I decided to see what I could find on the drive using sluth kit.
 
 [Follow this guide for getting VM setup](https://forum.proxmox.com/threads/proxmox-beginner-tutorial-how-to-set-up-your-first-virtual-machine-on-a-secondary-hard-disk.59559)
 
@@ -78,9 +74,10 @@ update VM {VMID}: -scsi2 /dev/disk/by-id/ata-{your drive's info}
 
 #### Then stop and restart the VM to make sure it shows up
 
-### Performing forensics  
 
-#### Once you have Kali and the drive you want to investigate setup run autopsy. By deafult it will run on localhost
+# Performing forensics  
+
+#### Once you have Kali and the drive you want to investigate setup run Autopsy. By default it will run on localhost
 
 ![](/assets/images/autopsy_start.png)
 
@@ -91,4 +88,4 @@ update VM {VMID}: -scsi2 /dev/disk/by-id/ata-{your drive's info}
 
 ### Perform the following [To set up the case](https://wiki.sleuthkit.org/index.php?title=Autopsy:_Setting_Up_a_Case)
 
-### Please refer to the post "Performing digital forensics on Kali" for performing forensics.
+### Please refer to the post [Performing digital forensics on Kali]({% post_url 2024-07-28-post-Kali-DF %}) for performing forensics.

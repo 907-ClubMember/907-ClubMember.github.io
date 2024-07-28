@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 907-ClubMember's site
-# email:
+title: 907-ClubMember`s site
+email:
 description: >- # this means to ignore newlines until "baseurl:"
-    A cyber sec blog about things I find cool. Hoping to do digital forensics and other stuff as well. Might through in some Homelab stuff
+   
 
 # twitter_username: username
 # github_username: username
@@ -58,31 +58,31 @@ plugins:
   - jekyll-remote-theme
 
 author:
-  name   : "First Lastname"
- avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Cyber sec employee with side projects I find interesting."
-#  links:
+#  name   : "First Lastname"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "A blog about things I find cool. Hoping to do digital forensics and other stuff as well. Might throw in some Homelab stuff"
+  links:
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
 #      url: "https://"
 #    - label: "Twitter"
 #      icon: "fab fa-fw fa-twitter-square"
 #      url: "https://twitter.com/"
-#    - label: "GitHub"
-#      icon: "fab fa-fw fa-github"
-#      url: "https://github.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/907-ClubMember"
 #    - label: "Instagram"
 #      icon: "fab fa-fw fa-instagram"
 #      url: "https://instagram.com/"
 
-# footer:
-#  links:
+footer:
+  links:
 #    - label: "Twitter"
 #      icon: "fab fa-fw fa-twitter-square"
 #      url: "https://twitter.com/"
-#    - label: "GitHub"
-#      icon: "fab fa-fw fa-github"
-#      url: "https://github.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/907-ClubMember"
 #    - label: "Instagram"
 #      icon: "fab fa-fw fa-instagram"
 #      url: "https://instagram.com/"
@@ -98,7 +98,7 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: "_pages"
@@ -113,3 +113,12 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+repository: 907-ClubMember/907-ClubMember.github.io
+
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "dark-blue" # "github-dark"
+    issue_term: "pathname"
