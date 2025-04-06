@@ -16,9 +16,7 @@ tags:
 # PI-hole Setup
 
 #### [I followed this guide](https://www.wundertech.net/how-to-install-pi-hole-on-proxmox/) with the only issue I had being the console not working on a reboot which I was able to solve [By changing the console setting from tty to console](https://www.reddit.com/r/Proxmox/comments/11cihzd/help_new_container_blank_screen/ja3ehgl/)
-
-![](/assets/images/TTY_Error.png)
-
+#### Another issue I had was with PI hole not running which was solved by [Enabling nesting on Proxmox](https://discourse.pi-hole.net/t/lxc-and-ftl-permissions/61103/15)
 # Lists used
 
 #### After looking around online I decided on the following blacklist 
